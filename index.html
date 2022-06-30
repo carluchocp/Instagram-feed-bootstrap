@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/ab957266cb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ee0cfaef62.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Instagram feed</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-12 p-0">
+            <nav class="navbar bg-light border-bottom px-5">
+                <div class="container-fluid justify-content-between">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a class="navbar-brand" href="#">
+                            <p class="logo mb-0"><i class="fa-brands fa-instagram"></i> Instagram</p>
+                        </a>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Create a new post
+                        </button>
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <form>
+                                        <div class="mx-2 my-2">
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                    <div class="modal-body">
+                                        <button type="button" class="btn btn-light border"><i
+                                                class="fa-solid fa-camera"></i></button>
+                                        <button type="button" class="btn btn-light border"><i
+                                                class="fa-solid fa-location-dot"></i></button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-light border"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-start">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <ul class="nav nav-pills mb-1 justify-content-center mt-1 p-0" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                        class="fa-solid fa-grip"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                        class="fa-solid fa-square"></i></button>
+            </li>
+        </ul>
+        <div class="tab-content p-0" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-4">
+                            <img src="https://picsum.photos/id/9/200/200" class="w-100" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <img src="https://picsum.photos/id/122/200/200" class="w-100" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <img src="https://picsum.photos/id/89/200/200" class="w-100" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <img src="https://picsum.photos/id/269/200/200" class="w-100" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <img src="https://picsum.photos/id/366/200/200" class="w-100" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <img src="https://picsum.photos/id/689/200/200" class="w-100" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <img src="https://picsum.photos/id/491/200/200" class="w-100" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <img src="https://picsum.photos/id/1/200/200" class="w-100" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <img src="https://picsum.photos/id/2/200/200" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="container-fluid bg-light">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+                            <div class="bg-white mb-4 mx-auto mt-4 w-100 rounded">
+                                <div class="d-flex justify-content-between px-2 align-items-center">
+                                    <h5>My last photo</h5>
+                                    <p class="mb-0 text-secondary">9/9</p>
+                                </div>
+                                <div class="col-12 col-md-4 w-100">
+                                    <img src="https://picsum.photos/id/9/200/200" class="w-100" alt="">
+                                </div>
+                                <div>
+                                    <p class="px-2"><strong>356 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="px-2">This is my las photo of the feed.</p>
+                                </div>
+                                <div class="d-flex text-secondary justify-content-between px-2">
+                                    <div>
+                                        <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                <div class="d-flex justify-content-between px-2 align-items-center">
+                                    <h5>My last trip</h5>
+                                    <p class="mb-0 text-secondary">8/9</p>
+                                </div>
+                                <div class="col-12 col-md-4 w-100">
+                                    <img src="https://picsum.photos/id/122/200/200" class="w-100" alt="">
+                                </div>
+                                <div>
+                                    <p class="px-2"><strong>249 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="px-2">incredible photo.</p>
+                                </div>
+                                <div class="d-flex text-secondary justify-content-between px-2">
+                                    <div>
+                                        <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                <div class="d-flex justify-content-between px-2 align-items-center">
+                                    <h5>At home</h5>
+                                    <p class="mb-0 text-secondary">7/9</p>
+                                </div>
+                                <div class="col-12 col-md-4 w-100">
+                                    <img src="https://picsum.photos/id/89/200/200" class="w-100" alt="">
+                                </div>
+                                <div>
+                                    <p class="px-2"><strong>197 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="px-2">peaceful garden.</p>
+                                </div>
+                                <div class="d-flex text-secondary justify-content-between px-2">
+                                    <div>
+                                        <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                <div class="d-flex justify-content-between px-2 align-items-center">
+                                    <h5>TBT</h5>
+                                    <p class="mb-0 text-secondary">6/9</p>
+                                </div>
+                                <div class="col-12 col-md-4 w-100">
+                                    <img src="https://picsum.photos/id/269/200/200" class="w-100" alt="">
+                                </div>
+                                <div>
+                                    <p class="px-2"><strong>217 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="px-2">memories of my last trip. #Tbt</p>
+                                </div>
+                                <div class="d-flex text-secondary justify-content-between px-2">
+                                    <div>
+                                        <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                <div class="d-flex justify-content-between px-2 align-items-center">
+                                    <h5>Back at it!</h5>
+                                    <p class="mb-0 text-secondary">5/9</p>
+                                </div>
+                                <div class="col-12 col-md-4 w-100">
+                                    <img src="https://picsum.photos/id/366/200/200" class="w-100" alt="">
+                                </div>
+                                <div>
+                                    <p class="px-2"><strong>451 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="px-2">this is my day to day.</p>
+                                </div>
+                                <div class="d-flex text-secondary justify-content-between px-2">
+                                    <div>
+                                        <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                <div class="d-flex justify-content-between px-2 align-items-center">
+                                    <h5>At the beach</h5>
+                                    <p class="mb-0 text-secondary">4/9</p>
+                                </div>
+                                <div class="col-12 col-md-4 w-100">
+                                    <img src="https://picsum.photos/id/689/200/200" class="w-100" alt="">
+                                </div>
+                                <div>
+                                    <p class="px-2"><strong>168 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="px-2">Wow! incredible sunset.</p>
+                                </div>
+                                <div class="d-flex text-secondary justify-content-between px-2">
+                                    <div>
+                                        <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                <div class="d-flex justify-content-between px-2 align-items-center">
+                                    <h5>Hard work</h5>
+                                    <p class="mb-0 text-secondary">3/9</p>
+                                </div>
+                                <div class="col-12 col-md-4 w-100">
+                                    <img src="https://picsum.photos/id/491/200/200" class="w-100" alt="">
+                                </div>
+                                <div>
+                                    <p class="px-2"><strong>142 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="px-2">Not everything can be computer work.</p>
+                                </div>
+                                <div class="d-flex text-secondary justify-content-between px-2">
+                                    <div>
+                                        <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                <div class="d-flex justify-content-between px-2 align-items-center">
+                                    <h5>Programming</h5>
+                                    <p class="mb-0 text-secondary">2/9</p>
+                                </div>
+                                <div class="col-12 col-md-4 w-100">
+                                    <img src="https://picsum.photos/id/1/200/200" class="w-100" alt="">
+                                </div>
+                                <div>
+                                    <p class="px-2"><strong>264 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="px-2">At work!.</p>
+                                </div>
+                                <div class="d-flex text-secondary justify-content-between px-2">
+                                    <div>
+                                        <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white mb-4 mx-auto w-100 rounded">
+                                <div class="d-flex justify-content-between px-2 align-items-center">
+                                    <h5>My first photo</h5>
+                                    <p class="mb-0 text-secondary">1/9</p>
+                                </div>
+                                <div class="col-12 col-md-4 w-100">
+                                    <img src="https://picsum.photos/id/2/200/200" class="w-100" alt="">
+                                </div>
+                                <div>
+                                    <p class="px-2"><strong>312 Likes</strong></p>
+                                </div>
+                                <div>
+                                    <p class="px-2">This is my first photo of the feed. I am excited about it!.</p>
+                                </div>
+                                <div class="d-flex text-secondary justify-content-between px-2">
+                                    <div>
+                                        <p><i class="fa-regular fa-heart"></i> Comment...</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

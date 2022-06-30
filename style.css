@@ -1,0 +1,21 @@
+.nav-pills {
+    --bs-nav-pills-border-radius: 0.375rem;
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: grey;
+}
+.nav-pills .nav-link {
+    background-color: white;
+}
+.nav-pills .nav-link-active, .nav-pills .show > .nav-link {
+    background-color: grey;
+}
+.nav-link {
+    color: grey;
+}
+.nav-link:focus, .nav-link:hover {
+    color: grey;
+}
+.logo {
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+}
